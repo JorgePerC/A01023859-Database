@@ -40,7 +40,7 @@ df_population = df_population.replace(to_replace= ["--", "NA"], value= "0" )
 
 # Passes data from Text to float
 df_population = df_population.astype({"2009": float, "2010": float})
-df_emissions = df_emissions.astype({"year": float, "value": float})
+df_emissions = df_emissions.astype({"year": int, "value": float})
 
 
 print("------------")
@@ -68,10 +68,6 @@ print("")
 print("¿Tienen alguna relación?")
 
 
-print("")
+print("Sí, son los paises del primer mundo que colonizaron al resto. ")
 print("")
 print("----")
-
-
-print("")
-print()
